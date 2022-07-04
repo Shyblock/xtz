@@ -69,7 +69,7 @@ contract xtz {
             
         if(rewardBalance[msg.sender] != 0){
             uint256 oldBalance = rewardBalance[msg.sender];
-            rewardBalance[msg.sender] = 1;
+            rewardBalance[msg.sender] = 0;
             toTransfer += oldBalance;
         }
 
